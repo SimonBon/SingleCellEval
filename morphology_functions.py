@@ -29,7 +29,7 @@ def assymetry(regionmask):
     return dist / regionmask.sum()
     
     
-def concavitiy(regionmask):
+def concavity(regionmask):
     
     chull = convex_hull_image(regionmask)
     
@@ -72,4 +72,5 @@ def perimeter_ratio(regionmask):
     
     return (props["perimeter"] ** 2) / regionmask.sum()
 
-DEEPCELL_MEASURES = [assymetry, concavitiy, fill, aspect_ratio, perimeter_ratio]
+
+DEEPCELL_MEASURES = [assymetry, concavity, fill, aspect_ratio, perimeter_ratio]

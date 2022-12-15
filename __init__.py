@@ -7,7 +7,7 @@ from skimage.measure import regionprops_table
 from typing import Union
 from .intensity_functions import mean_intensity, mean_80_intensity
 
-PROPERTIES = ["label", "area", "area_convex", "area_filled", "axis_major_length", "axis_minor_length", "eccentricity", "equivalent_diameter_area", "perimeter", "solidity"]
+PROPERTIES = ["label", "area", "area_convex", "area_filled", "axis_major_length", "axis_minor_length", "eccentricity", "equivalent_diameter_area", "perimeter", "solidity", "centroid"]
 
 def main_function(I: 'np.ndarray[np.uint8]', 
                   intensity_image: 'np.ndarray[np.float32]'=None,
